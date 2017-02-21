@@ -1,0 +1,75 @@
+<div class="hidden" data-gsn-title="{{ChainName}} | recipe center"></div>
+<div data-ctrl-product-search="" class="col-md-12 text-center" data-ng-init="vm.pageIdx = 1">
+  <h1 class="text-center">Product Search</h1>
+  <div class="col-md-10 product-search">
+    <div class="row">
+      <div class="searchDisclaimer">
+        <p>These products are authorized for sale at your store. It is possible that items on this list are currently out of season or out of stock.</p>
+      </div>
+    </div>
+    <div class="row" data-ng-show="vm.searchResult.CircularResult.length > 0">
+      <h3 class="product-search-header font-book text-center">Top Circular Items</h3>
+      <div class="row column-headers">
+        <div class="col-md-2">&nbsp;</div>
+        <div class="col-md-8">Item</div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row result" data-ng-repeat="item in vm.searchResult.CircularResult | orderBy:'Relevance':true" data-ng-include="getThemeUrl('/views/engine/product-item.html')">
+      </div>
+    </div>
+
+    <div class="row" data-ng-show="vm.searchResult.SaleItemResult.length > 0">
+      <h3 class="product-search-header font-book text-center">Top Items on Sale</h3>
+      <div class="row column-headers">
+        <div class="col-md-2">&nbsp;</div>
+        <div class="col-md-8">Item</div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row result" data-ng-repeat="item in vm.searchResult.SaleItemResult" data-ng-include="getThemeUrl('/views/engine/product-item.html')"></div>
+    </div>
+
+    <div class="row">
+    <datalist id="departments">
+      <option value="{{item.key}}" data-bindonce="" data-ng-repeat="item in vm.searchResult.NonSaleItemResultGrouping">
+    </datalist>
+      <h3 class="product-search-header font-book text-center">Top Item Matches</h3>
+      <div class="itemMatchesPager" data-pagination="" data-max-size="10" data-total-items="totalItems" data-page="currentPage" data-items-per-page="itemsPerPage" data-ng-show="vm.hasAllItems"></div>
+      <div style="width: 100%;" class="text-center">
+        <ul class="pagination" data-ng-show="vm.hasAllItems">
+          <li>
+            <a href="javascript:void(0)" aria-label="Previous" data-ng-click="vm.pageIdx = (vm.pageIdx <= 1) ? vm.pageIdx = ((totalItems/itemsPerPage) | number:0): vm.pageIdx - 1">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li data-ng-repeat="item in [] | range:0:(totalItems/itemsPerPage + 1)" data-ng-class="{'active': item == (vm.pageIdx - 1)}">
+             <a href="javascript:void(0)" aria-label="Previous" data-ng-click="vm.pageIdx = item + 1">{{item + 1}}</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" aria-label="Next" data-ng-click="vm.pageIdx = (vm.pageIdx >= totalItems/itemsPerPage) ? 1 : vm.pageIdx + 1">
+  <span aria-hidden="true">&raquo;</span>
+</a></li>
+        </ul>
+         <div class="col-md-12" style="text-align: right">
+      Department: <input type="text" list="departments" data-ng-model="vm.filter.CategoryName" placeholder="--All Departments--" class="text-center" />
+    </div>
+    </div>
+      <div class="row">
+        {{vm.searchResult.NonSaleItemResult.key}} 
+              <div class="row column-headers">
+                <div class="col-md-2">&nbsp;</div>
+                <div class="col-md-8">Item</div>
+                <div class="col-md-2"></div>
+              </div>
+        <div class="row result" data-ng-repeat="item in vm.searchResult.NonSaleItemResult.items | filter:vm.filter.CategoryName | pagingFilter:itemsPerPage:(vm.pageIdx-1)" data-ng-include="getThemeUrl('/views/engine/product-item.html')"></div>
+      </div>
+    </div>
+
+    <div class="productImagePopOver hidden" data-ng-non-bindable="">
+      <img data-ng-src="{{item.ImageUrl || getThemeUrl('/images/no_image.jpg')}}" />
+    </div>
+  </div>
+  <div class="gsn-popover">
+    <div class="popover-title"></div>
+    <div class="popover-content"></div>
+  </div>
+</div>

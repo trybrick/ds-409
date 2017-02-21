@@ -1,0 +1,33 @@
+<div class="modal-content">
+  <div class="modal-header">
+    <h3 style="margin-top:15px; margin-bottom: 10px; margin-left: 11px;">Sign in</h3>
+  </div>
+  <div class="modal-body" data-gsn-login="">
+    <form role="form" class="myLoginForm" name="myLoginForm" data-ng-submit="login()" data-stop-event="click" class="generic-content">
+        <input id="usernameField" name="usernameField" type="text" style="width:96.5%;" class="form-control" placeholder="Email or username" data-ng-model="profile.UserName" required="required" />
+        <input id="passwordField" name="passwordField" type="password" style="width:96.5%;" class="form-control" placeholder="Password" data-ng-model="profile.Password" required="required" />
+        <div class="form-group" data-ng-show="hasSubmitted && !isValidSubmit">
+          <div class="alert alert-danger">
+            Email or password is incorrect.
+          </div>
+        </div> 
+        <div data-gsn-spinner="{radius:30, width:8, length: 16}" data-show-if="isSubmitting"></div>
+        <div style="padding-top: 5px">
+        <button type="submit" class="btn btn-default btn-sm pull-right">Sign in</button>
+        <button type="button" class="btn btn-default btn-sm pull-right gmodal-close" data-ng-click="closeModal();">Cancel</button>
+        </div>
+    </form>
+    <br />
+    <div style="height: 80px">
+      <a class="col-md-6" href="javascript:void(0)" data-ng-click="goUrl('/registration')">New User? Register <i class="fa fa-arrow-circle-right"></i></a><br /><br />
+      <p style="text-align:left; margin-left:15px; font-size: 1em;"><a style="width:auto; font-weight:normal;" href="javascript:void(0)" class="" data-gsn-modal="getThemeUrl('/views/engine/modal-recover-username.html')" data-ng-click="closeModal();showModal()" data-force-show="true">Forgot username?</a><br />
+      <a style="width:auto; font-weight:normal;" href="javascript:void(0)" class="" data-gsn-modal="getThemeUrl('/views/engine/modal-recover-password.html')" data-ng-click="closeModal();showModal()" data-force-show="true">Forgot password?</a></p>
+    </div>
+  </div>
+</div>
+
+<style>
+.gmodal {
+  background: none !important;
+}
+</style>

@@ -1,0 +1,69 @@
+<div style="position: relative; left: 15px;">
+<a class="btn btn-default" href="javascript:void(0)" data-ng-click="goUrl('/circular')" title="flyer view" data-ng-class="{ 'active': !isListView }">
+  <i class="fa fa-picture-o"></i>
+  <br />ads
+</a>
+<a class="btn btn-default" href="javascript:void(0)" data-ng-click="goUrl('/circular/list')" title="list view" data-ng-class="{ 'active': currentPath.indexOf('list') > 0 }">
+  <i class="fa fa-list"></i>
+  <br />list
+</a>
+<a class="btn btn-default" href="javascript:void(0)" data-ng-click="goUrl('/circular/text')" title="text only view" data-ng-class="{ 'active': currentPath.indexOf('text') > 0 }">
+  <i class="fa fa-font"></i>
+  <br />text
+</a>
+<a class="btn btn-default" href="javascript:void(0)" title="help" data-gsn-modal="getThemeUrl('/views/engine/modal-circular-help.html')" data-ng-click="showModal()">
+  <i class="fa fa-question-circle"></i>
+</a>
+</div>
+<style>
+  .availableVarieties 
+  {
+    padding: 5px;
+    max-height: 472px;
+    width: 300px;
+  }
+
+  .varietiesHeader 
+  {
+    margin: -5px -5px 5px;
+    padding: 0 0 1px;
+  }
+
+  .varietiesHeader h4 
+  {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .availableVarietiesImage 
+  {
+    margin-left: 46px;
+  }
+
+  .availableDescription 
+  {
+    height: 90px;
+    overflow: hidden;
+  }
+
+  .availableVarietiesList 
+  {
+    height: 118px;
+    overflow: scroll;
+  }
+
+  .availableVarieties ul 
+  {
+    padding: 0;
+  }
+
+  .availableVarieties ul li 
+  {
+    list-style-type: none;
+  }
+
+  .varieties li 
+  {
+    padding-bottom: 4px;
+  }
+</style>

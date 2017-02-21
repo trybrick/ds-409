@@ -1,0 +1,201 @@
+    <!-- custom header -->
+<div id="insideHeader" class="insideHeader"> 
+  <div class="container">
+  <img style="width:100%" class="img-responsive" src="http://upload.gsngrocers.com/chainfiles/402/creative/201608/636081756635870971-circularheader.jpg" alt="Recipe Center"> 
+  </div>
+</div>
+<div class="container">
+	<div class="row">
+ 		<div class="col-lg-12 text-center">
+        <h1 style="opacity: .9;" class="Cob-section-heading_small">Recipe Center</h1>
+		</div>
+    </div>
+    <div class="row">
+ 		<div class="col-lg-12 text-center">
+ 		<h4 style="opacity:.9;" class="about-heading_small"></h4>
+     		<div class="clear_small">
+            </div>
+     	</div>
+	</div>
+</div>
+
+<!-- end header -->
+<div class="hidden-meta" data-gsn-title="{{ChainName}} | Recipe Search"></div>
+<div class="row">
+
+<div class="col-md-12" style="margin-top:2%;">
+   <p id="InnerTop"></p> 
+<div style="padding: 0px 15px !important" data-ctrl-recipe-search="" class="col-md-8">
+<div>
+ 
+ <ul class="nav nav-tabs" style="padding-top: 5px">
+
+
+<li data-ng-class="">
+		<a class="btn-default" href="/recipecenter">Recipe Center</a>
+  </li>
+
+
+	<li data-ng-class="">
+		<a class="btn-default" href="/myrecipes">My Recipes</a>
+  </li>
+    <li class="active">
+		<a href="javascript:void(0)" class="btn-default" data-gsn-modal="getThemeUrl('/views/engine/modal-recipe-advanced-search.html')" data-ng-click="showModal()" data-analytics-on="click" data-analytics-event="ClickRecipeAdvanceSearch" data-analytics-category="Recipe">Search</a>
+  </li>
+  </ul>
+ 
+ </div> 
+  <h1>Recipe Search Result</h1>
+  <br />
+  <ul class="pagination" data-ng-hide="totalItems == 0" data-ng-init="vm.currentPage = 1">
+    <li>
+      <a href="javascript:void(0)" aria-label="Previous" data-ng-click="vm.currentPage = (vm.currentPage <= 1) ? vm.currentPage = 20 : vm.currentPage - 1">
+        <span aria-hidden="true"><i class="fa fa-arrow-circle-left"></i></span>
+      </a>
+    </li>
+  	<li id="pagenumbers" data-ng-repeat="item in [] | range:0:totalItems/itemsPerPage" data-ng-class="{'active': item == (vm.currentPage - 1)}">
+  	  <a href="javascript:void(0)" data-ng-click="vm.currentPage = item + 1">{{$index + 1}}</a>
+  	</li>
+  	<li>
+      <a href="javascript:void(0)" aria-label="Next" data-ng-click="vm.currentPage = (vm.currentPage >= totalItems/itemsPerPage) ? vm.currentPage = 1 : vm.currentPage + 1">
+        <span aria-hidden="true"><i class="fa fa-arrow-circle-right"></i></span>
+      </a>
+    </li>
+  </ul>
+  <div style="padding: 0px 0px 10px 15px;" class="recipeSearchResults" data-ng-hide="totalItems == 0" data-ng-repeat="item in vm.searchResult | orderBy:'Relevance':true | pagingFilter:itemsPerPage:(vm.currentPage-1)">
+      <a href="javascript:void(0)" data-ng-click="goUrl('/recipe/' + item.RecipeId)">{{item.RecipeTitle}}</a>
+  </div>
+  <div data-ng-hide="totalItems > 0">
+	No results found
+  </div>
+</div>
+<div class="col-md-4">
+<div style="margin-right:30px; margin-left:30px;" data-ng-include="getThemeUrl('/views/engine/shopping-list-plugin.html')"class="row"><div>
+</div>
+</div>
+</div>
+
+<style>
+@media (max-width:400px){
+	#pagenumbers {
+		display:none;	
+	}
+	.pagination {
+		margin-left: 39%;	
+	}
+}
+
+.recipeSearchResults a {
+  color: #000 !important;
+}
+.recipeContent
+{
+  margin-top: 10px;
+}
+
+.recipeCenter h2, .recipeCenter h3, .rOTD h3, .rOTD p, .rOTDTitle, .recipeArticle p
+{
+  text-align: center;
+}
+
+.recipeSearch, .advancedSearch, .top50Recipe
+{
+  background-color: #d3d3d3;
+}
+
+.course, .prepTime, .skill
+{
+  margin-bottom: 10px;
+}
+
+.recipeArticle
+{
+  background-color: #FFFFFF;
+  border: 1px solid #7D6D6A;
+  float: none;
+  margin-top: 14px;
+  min-height: 270px;
+  padding: 10px;
+}
+
+.recipeArticle p
+{
+  color: #000000;
+}
+
+.recipeArticle img
+{
+  display: block;
+  margin: 0 auto;
+  max-height: 125px;
+}
+
+.recipeArticle h3
+{
+  border-top: 15px solid #767676;
+  margin: -18px 0 10px;
+  text-align: center;
+}
+
+.rOTD img
+{
+  margin: 10px 74px;
+  max-height: 150px;
+}
+
+.rOTDTitle
+{
+  background-color: #767676;
+  color: #ffffff;
+  padding: 10px 0;
+}
+
+.mealPlanner h3
+{
+  border-bottom: 1px solid #000000;
+  font-size: 18px;
+}
+
+.mealByDay a
+{
+  /*color: #000000;*/
+}
+
+.recipeBox
+{
+  margin: 10px 0;
+}
+
+.recipeMenu button
+{
+  background-color: #767676;
+  border-radius: 0;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.tips
+{
+  margin-bottom: 10px;
+}
+
+.quickSearch h3, .advanced h3, .advanced a
+{
+  color:white;
+}
+
+.quickSearch li a, .topFifty a
+{
+  color: #000000;
+}
+
+.myRecipeInfo h2, .myRecipeInfo h3, .myRecipeInfo h4, .myRecipeInfo h5
+{
+  color:white;
+}
+
+.advanced select, .advanced option
+{
+  color: #000000;
+}
+</style>

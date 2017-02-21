@@ -1,0 +1,24 @@
+<div class="varietiesHeader generic-content">
+  <h4>{{gvm.selectedItem.Description}}</h4>
+</div>
+<div class="recipeIdeas generic-content" data-ng-if="gvm.selectedItem.RecipeSearch">
+  <a href="javascript:void(0)" data-ng-click="goUrl('/recipe/search?q=' + gvm.selectedItem.RecipeSearch)">Recipe Ideas</a>
+</div>
+<div class="generic-content">
+  <img class="availableVarietiesImage" data-ng-src="{{gvm.selectedItem.SmallImageUrl  || getThemeUrl('/images/no_image.jpg')}}" />
+</div>
+<div class="theme-color">                                                                                                                  
+  <button class="btn btn-default btn-xs pull-right" 
+  data-ng-click="doToggleCartItem($event, gvm.selectedItem)">{{ isOnList(gvm.selectedItem) && "REMOVE" || "ADD ITEM"}}</button>
+  <h4>{{gvm.selectedItem.PriceString}}</h4>
+</div>
+<div class="availableDescription generic-content">{{gvm.selectedItem.ItemDescription}}</div>
+<div data-ng-if="gvm.selectedItem.Varieties.length > 0"><strong>{{gvm.selectedItem.LinkedItemCount}}</strong>&nbsp;varieties.&nbsp;&nbsp;Select below.</div>
+<div class="availableVarietiesList generic-content" data-ng-if="gvm.selectedItem.Varieties.length > 0">
+  <ul>
+    <li class="row generic-content" data-ng-repeat="item in gvm.selectedItem.Varieties">
+      <button type="button" class="btn btn-default btn-xs col-md-3" data-ng-click="doToggleCartItem($event, item)">{{ isOnList(item) && "Remove" || "Add"}}</button>
+      <p class="col-md-9 pull-right">{{item.Description}}</p>
+    </li>
+  </ul>
+</div>

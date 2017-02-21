@@ -1,0 +1,18 @@
+<div class="dropdown pull-right" style="background-color: none !important" data-ng-cloak="" data-ng-show="isLoggedIn" data-ng-class="{ 'open': gvm.loginMenuActive }">
+  <a href="javascript:void(0)" data-ng-click="gvm.loginMenuActive = !gvm.loginMenuActive">
+    <i class="fa fa-user"></i> {{ gvm.profile.FirstName + ' ' + gvm.profile.LastName}} <i class="fa fa-caret-down"></i>
+  </a>
+  <div style="padding:17px;" class="dropdown-menu dropdown-menu-touch generic-content">
+    <a href="javascript:void(0)" data-ng-click="goUrl('/profile')"><i class="fa fa-user"></i> Profile </a><br /><br />
+    <a href="javascript:void(0)" data-ng-click="logout()">Sign-out</a><br />
+  </div>
+</div>
+<div class="pull-right" style="background-color: none !important" data-ng-cloak="" data-ng-if="!isLoggedIn" data-ng-class="{ 'open': gvm.loginMenuActive }">
+  <a href="javascript:void(0)" data-gsn-modal="getThemeUrl('/views/engine/modal-login.html')" data-show-if="gvm.loginCounter" data-ng-click="showModal()">
+    Sign in
+  </a>
+  |
+  <a href="javascript:void(0)" data-ng-click="goUrl('/registration')">
+    Register
+  </a>
+</div>

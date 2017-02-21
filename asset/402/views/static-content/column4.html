@@ -1,0 +1,13 @@
+<div class="hidden-meta" data-ng-if="partialContents[0]" data-gsn-title="{{ ChainName + ' | ' + (getConfig('title').Description || partialContents[0].Headline || contentDetail.name)}}"></div>
+<div class="col-md-12"><!-- four columns with leaderboard -->
+  <div data-ng-if="partialContents[0].Description">
+    <h1 data-ng-bind-html="partialContents[0].Headline" data-ng-if="partialContents[0].Headline"></h1>
+    <div class="staticContent" data-gsn-dynamic="" dynamic="partialContents[0].Description"></div>  
+  </div>
+  <div class="row" data-ng-repeat="idx in [] | range:0:getPageCount(partialContents.slice(1),4)">
+    <div class="col-md-3 col-sm-3" data-ng-repeat="item in partialContents.slice(1) | pagingFilter:4:idx">
+      <h2 data-ng-bind-html="item.Headline" data-ng-if="item.Headline"></h2>
+      <div class="staticContent" data-gsn-dynamic="" dynamic="item.Description"></div>
+    </div>                                
+  </div> 
+</div>

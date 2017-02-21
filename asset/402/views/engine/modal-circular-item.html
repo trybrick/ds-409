@@ -1,0 +1,64 @@
+<div class="modal-content">
+    <div class="text-center" style="height: 5px">
+        <div class="close circular-close" data-ng-click="vm['item' + $index] = 0" style="position: absolute; top: -40px; right: 0px"><i class="fa fa-2x fa-times"></i></div>
+    </div>
+    <div class="modal-body noPad text-center" itemscope itemtype="http://schema.org/Product" style="position: relative; overflow: auto; display: block">
+        <div class="col-md-5" style="text-align: right;">
+            <div class="hidden meta">
+                <div class="product-id">{{item.CircularItemId}}</div>
+                <div class="product-brand">{{item.BrandName}}</div>
+                <div class="product-category">{{item.CategoryName}}</div>
+            </div>
+             <div class="SalePrice" data-ng-show="item.PriceString" itemprop="price" content="{{item.SalePrice}}">{{item.PriceString}}</div>
+            <div class="savings" data-ng-show="item.Savings">SAVE - {{item.SavingsString}}</div>
+            <h4>{{item.Description}}</h4>
+            <p itemprop="description">{{item.ItemDescription}}</p>
+            
+            <div style="padding-top: 10px"> SHARE: <br />
+            <ul class="list-inline social-buttons">
+                <li>
+                    <a data-ng-href="http://www.facebook.com/sharer.php?u={{getFullPath('/circular/list?cache=no&amp;storenbr=' + gvm.currentStore.StoreNumber + '&amp;q=' + item.ItemId)}}" rel="nofollow" target="_blank" tabindex="0"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="http://twitter.com/share?url={{encodeURIComponent(getFullPath('/circular/list?cache=no&amp;storenbr=' + gvm.currentStore.StoreNumber + '&q=' + item.ItemId))}}&amp;text={{item.Description}}" rel="nofollow" target="_blank" tabindex="0"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="https://plus.google.com/share?url={{getFullPath('/circular/list?cache=no&amp;storenbr=' + gvm.currentStore.StoreNumber + '&amp;q=' + item.ItemId)}}" target="_blank" tabindex="0">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://pinterest.com/pin/create/button/?url={{getFullPath('/circular/list?cache=no&amp;storenbr=' + gvm.currentStore.StoreNumber + '&amp;q=' + item.ItemId)}}" rel="nofollow" target="_blank" tabindex="0">
+                        <i class="fa fa-pinterest"></i>
+                    </a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <div class="col-md-7" style="position: relative; overflow: auto; display: block;">
+            <div style="position: absolute; top: 0px; right: 26px; z-index: 1">
+                <button class="btn btn-default btn-sm" data-ng-click="doToggleCircularItem($event, item)">{{ isOnList(item) && "REMOVE" || "ADD ITEM"}}</button>
+            </div>
+            <div style="max-width: 100%; max-height: 300px; text-align: center">
+                <img class="myimage" itemprop="image" data-ng-src="{{item.ImageUrl || getThemeUrl('/images/no_image.jpg')}}" />
+            </div>
+        </div>
+    </div>
+    <div class="text-center" style="height: 5px">
+    </div>
+</div>
+<style>
+.gmodal {
+    background: none !important;
+}
+
+.myimage {
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+	max-height: 200px;
+	max-width:200px;
+}
+</style>

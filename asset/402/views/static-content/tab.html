@@ -1,0 +1,7 @@
+<div class="hidden-meta" data-ng-if="partialContents[0]" data-gsn-title="{{ ChainName + ' | ' + (getConfig('title').Description || partialContents[0].Headline || contentDetail.name)}}"></div>
+<div class="col-md-12" style="padding-top: 5px">
+  <ul class="nav nav-tabs">
+  	<li data-ng-class="{'active' : $index == pcvm.tab}" data-ng-repeat="item in partialContents"><a class="btn-default" href="javascript:void(0)" data-ng-click="goUrl('?tab=' + $index)">{{item.Headline}}</a></li>
+  </ul>
+  <div class="staticContent" data-gsn-dynamic="" dynamic="item.Description" data-ng-repeat="item in partialContents" data-ng-if="$index == pcvm.tab"></div>
+</div>

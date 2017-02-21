@@ -1,0 +1,261 @@
+<div class="hidden" data-gsn-title="{{ChainName}} | Recipe Center"></div>
+    <!-- custom header -->
+<div id="insideHeader" class="insideHeader"> 
+  <div class="container">
+  <img style="width:100%" class="img-responsive" src="http://upload.gsngrocers.com/chainfiles/402/creative/201608/636081756635870971-circularheader.jpg" alt="Recipe Center"> 
+  </div>
+</div>
+<div class="container">
+	<div class="row">
+ 		<div class="col-lg-12 text-center">
+        <h1 style="opacity: .9;" class="Cob-section-heading_small">Recipe Center</h1>
+		</div>
+    </div>
+    <div class="row">
+ 		<div class="col-lg-12 text-center">
+ 		<h4 style="opacity:.9;" class="about-heading_small">&nbsp;</h4>
+     		<div class="clear_small">
+            </div>
+     	</div>
+	</div>
+</div>
+    <p style="text-align:center;" id="InnerTop">Check out today's featured articles and recipes, you can also search for recipes below, and add the ingredients to your shopping list!</p> 
+<!-- end header -->
+<div style="margin-top:2%" data-ctrl-recipe-center="" class="col-md-12 text-center">
+
+  <div class="row">
+  <div class="col-md-8">
+  	<div style="margin: 0px 0px 15px 15px;">
+ 
+ <ul class="nav nav-tabs" style="padding-top: 5px">
+
+
+<li class="active">
+		<a class="btn-default" href="/recipecenter">Recipe Center</a>
+  </li>
+
+
+	<li data-ng-class="">
+		<a class="btn-default" href="/myrecipes">My Recipes</a>
+  </li>
+    <li data-ng-class="">
+		<a href="javascript:void(0)" class="btn-default" data-gsn-modal="getThemeUrl('/views/engine/modal-recipe-advanced-search.html')" data-ng-click="showModal()" data-analytics-on="click" data-analytics-event="ClickRecipeAdvanceSearch" data-analytics-category="Recipe">Search</a>
+  </li>
+  </ul>
+ 
+ </div> 
+  <div style="padding:0px 15px;" class="col-md-6 col-sm-6">
+    
+      <div class="panel panel-default"><div class="panel-heading">
+      <a href="javascript:void(0)" data-ng-click="goUrl('/recipe/' + vm.featuredRecipe.RecipeId)" data-analytics-on="click" data-analytics-event="ClickRecipeOfTheday" data-analytics-label="{{vm.featuredRecipe.RecipeTitle}}" data-analytics-category="Recipe">
+        <h4 style="text-align:left; color:#fff;" class="panel-title">Recipe of the Day</h4></div>
+        <div class="panel-body">
+        <img class="img-responsive" style="margin-right:10px; height:125px;" align="left" data-ng-src="{{vm.featuredRecipe.Images[0].RecipeImageUrl}}">
+        
+        
+        <p style="text-align:left;">{{vm.featuredRecipe.RecipeTitle}}</p>
+        <p style="font-weight:normal;text-align:left;">Check back each day for a different recipe to tantilize your taste buds!</p>
+        <br />
+      </a>
+      </div>
+    </div>
+  </div>
+   
+    <div style="padding:0px 15px;" class="col-md-6 col-sm-6">
+     <div class="panel panel-default"><div class="panel-heading">
+      <a href="javascript:void(0)" data-ng-click="goUrl('/article/' + vm.cookingTip.ArticleId)" data-analytics-on="click" data-analytics-event="ClickCookingTip" data-analytics-label="{{vm.cookingTip.Title}}" data-analytics-category="Recipe">
+      	<h4 style="text-align:left; color:#fff;" class="panel-title">Featured Cooking Tip</h4></div>
+        <div class="panel-body">
+        <img class="img-responsive" style="margin-right: 10px;height: 125px;" align="left" data-ng-src="{{vm.cookingTip.ImageUrl}}">
+        <p style="text-align:left;">{{vm.cookingTip.Title}}</p>
+        
+        <p style="font-weight:normal; text-align:left;" data-ng-bind="vm.cookingTip.Teaser"></p>
+      </a></div></div>
+     </div><div style="clear:both;"></div>
+     <div style="padding:0px 15px;" class="col-md-6 col-sm-6">
+       <div class="panel panel-default"><div class="panel-heading">
+      <a href="javascript:void(0)" data-ng-click="goUrl('/article/' + vm.featuredArticle.ArticleId)" data-analytics-on="click" data-analytics-event="ClickFeaturedArticle" data-analytics-label="{{vm.featuredArticle.Title}}" data-analytics-category="Recipe"><h4 style="text-align:left;color:#fff;" class="panel-title">Featured Article</h4></div>
+      <div class="panel-body">
+       <img class="img-responsive" style="margin-right:10px; height:125px;" align="left" data-ng-src="{{vm.featuredArticle.ImageUrl}}">
+        <p style="text-align:left;">{{vm.featuredArticle.Title}}</p>
+       
+        <p style="font-weight:normal;text-align:left;" data-ng-bind="vm.featuredArticle.Teaser"></p>
+      </a></div></div>
+   
+    
+  </div>
+   <div style="padding:0px 15px;" class="col-md-6 col-sm-6">
+       <div class="panel panel-default"><div class="panel-heading">
+      <a target="_blank" href="http://cobornsblog.com/featured-recipes/"><h4 style="text-align:left;color:#fff;" class="panel-title">From CobornsBlog.com</h4></div>
+      <div class="panel-body">
+       <img class="img-responsive" style="margin-right:10px; height:125px;" align="left" src="http://upload.gsngrocers.com/chainfiles/402/creative/201608/636082451000877810-blog.jpg">
+        <p style="text-align:left;">This Week's Featured Recipes</p>
+       
+        <p style="font-weight:normal;text-align:left;">Check out CobornsBlog.com for recipes, DIY tips, party planning ideas and more!</p>
+      </a></div></div>
+   
+    
+  </div>
+  </div>
+  <div class="col-md-4 col-sm-12">
+  <!--<div class="row recipeMenu">
+  </div>-->
+  <!-- <a style="margin-left:15px;margin-right:15px;" href="javascript:void(0)" class="button" data-gsn-modal="getThemeUrl('/views/engine/modal-recipe-advanced-search.html')" data-ng-click="showModal()" data-analytics-on="click" data-analytics-event="ClickRecipeAdvanceSearch" data-analytics-category="Recipe">Search Recipes &gt;&gt;</a> -->
+ 
+      <!--<button class="btn col-xs-12 text-left" id="myRecipeBoxMenu" data-ng-click="goUrl('/myrecipes')">
+        <div class="pull-left">
+          My Recipe Box (Saved Recipes)
+        </div>
+        <div class="pull-right">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </div>
+      </button> -->
+    <!--</div>
+    <div class="row dropdown recipeMenu">-->
+    <!-- <br />
+     <a style="margin-left:15px; margin-right:15px;" href="javascript:void(0)" class="button" id="myRecipeBoxMenu" data-ng-click="goUrl('/myrecipes')">My Recipes &gt;&gt;</a> -->
+   
+      <!-- <button class="btn col-xs-12 text-left" data-gsn-modal="getThemeUrl('/views/engine/modal-recipe-advanced-search.html')" data-ng-click="showModal()" data-analytics-on="click" data-analytics-event="ClickRecipeAdvanceSearch" data-analytics-category="Recipe">
+        <div class="pull-left">
+          Advanced Recipe Search
+        </div>
+        <div class="pull-right">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </div>
+      </button>
+      
+      -->
+	<br />
+	<div style="margin-right:30px; margin-left:30px;" data-ng-include="getThemeUrl('/views/engine/shopping-list-plugin.html')"class="row"><div>
+    </div>	
+   <!-- <a href="javascript:void(0)" data-ng-click="goUrl('/mealplannerfull')">
+      <h3>Meal Planner</h3>
+    </a>
+    <div class="mealPlanner" data-ng-repeat="group in vm.mealPlannerTeasers">
+      <h3>{{group.DisplayDate}}</h3>
+      <div class="mealByDay" data-ng-repeat="item in group.items">
+        <a href="javascript:void(0)" data-ng-click="goUrl('/recipe/' + item.RecipeId)">{{item.RecipeTitle}}</a> -->
+      </div>
+    </div>
+
+     
+  </div>
+</div></div>
+
+<style>
+.recipeContent
+{
+  margin-top: 10px;
+}
+
+.recipeCenter h2, .recipeCenter h3, .rOTD h3, .rOTD p, .rOTDTitle, .recipeArticle p
+{
+  text-align: center;
+}
+
+.recipeSearch, .advancedSearch, .top50Recipe
+{
+  background-color: #d3d3d3;
+}
+
+.course, .prepTime, .skill
+{
+  margin-bottom: 10px;
+}
+
+.recipeArticle
+{
+  background-color: #FFFFFF;
+  border: 1px solid #7D6D6A;
+  float: none;
+  margin-top: 14px;
+  min-height: 270px;
+  padding: 10px;
+}
+
+.recipeArticle p
+{
+  color: #000000;
+}
+
+.recipeArticle img
+{
+  display: block;
+  margin: 0 auto;
+  max-height: 125px;
+}
+
+.recipeArticle h3
+{
+  border-top: 15px solid #767676;
+  margin: -18px 0 10px;
+  text-align: center;
+}
+
+.rOTD img
+{
+  margin: 10px 74px;
+  max-height: 150px;
+}
+
+.rOTDTitle
+{
+  background-color: #767676;
+  color: #ffffff;
+  padding: 10px 0;
+}
+
+.mealPlanner h3
+{
+  border-bottom: 1px solid #000000;
+  font-size: 18px;
+}
+
+.mealByDay a
+{
+  /*color: #000000;*/
+}
+
+.recipeBox
+{
+  margin: 10px 0;
+}
+
+.recipeMenu button
+{
+  background-color: #767676;
+  border-radius: 0;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.tips
+{
+  margin-bottom: 10px;
+}
+
+.quickSearch h3, .advanced h3, .advanced a
+{
+  color:white;
+}
+
+.quickSearch li a, .topFifty a
+{
+  color: #000000;
+}
+
+.myRecipeInfo h2, .myRecipeInfo h3, .myRecipeInfo h4, .myRecipeInfo h5
+{
+  color:white;
+}
+
+.advanced select, .advanced option
+{
+  color: #000000;
+}
+@media (min-width: 768px) {
+	.featuredarticle {
+		margin-left: 25%;	
+	}
+}
+</style>

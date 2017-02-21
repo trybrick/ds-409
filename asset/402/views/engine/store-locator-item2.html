@@ -1,0 +1,23 @@
+
+                                        <div class="staticContent" data-ng-if="marker.location.Misc1" data-gsn-dynamic="" dynamic="marker.location.Misc1"></div>
+                                        <div class="infoMarker" data-ui-map-info-window="myInfoWindow">
+                                            <div data-ng-show="marker.location"> <strong>{{marker.location.StoreName}}</strong>
+                                                <br>
+                                                <address>
+                                                    {{marker.location.PrimaryAddress}}
+                                                    <br> {{marker.location.City}}, {{marker.location.StateName}} {{marker.location.PostalCode}}
+                                                </address>
+                                                <div> <a href="javascript:void(0)" class="btn btn-default btn-xs" data-ng-click="selectStore(marker)">Select Store</a> </div>
+                                            </div>
+                                        </div>
+                                        <div data-ng-include="getThemeUrl('/views/engine/Cobstore-locator-item.html')" itemscope="" itemtype="http://schema.org/Store"></div>
+                                        <div class="staticContent" data-ng-if="marker.location.Misc3" data-gsn-dynamic="" dynamic="marker.location.Misc3"></div>
+                                        <br>
+                                        <div style="color:#000; margin-top:-10px;" class="generic-content"><b>Services Offered:</b></div>
+                                        <!-- TOOLTIPS -->
+                                        <div class="store-tooltip" style="font-size:14pt;/* margin-top:-20px; */" data-gsn-dynamic="" dynamic="marker.location.Misc2">
+                                        </div>
+                                        <br>
+                                        <a class="button" style="box-shadow:none;" data-ng-href="/MFstore{{marker.location.StoreNumber}}"><i class="fa fa-info-circle" aria-hidden="true"></i> Store Details</a>
+                                        <div style="clear:both;">&nbsp;</div>
+                                        <!-- END TOOLTIPS -->

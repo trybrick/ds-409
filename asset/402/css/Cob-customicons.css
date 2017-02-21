@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#Cob-icon_natural {
+	left:0px;
+	width:32px;
+	background:url(http://files.coborns.com/coborns.com/img/customicons/Cob_customicons_both_101515a.png) 0 0;
+}
+
+#Cob-icon_natural:hover {
+	background: transparent url(http://files.coborns.com/coborns.com/img/customicons/Cob_customicons_both_101515a.png) -32px 0;
+}
+
+#Cob-icon_nuval {
+	left:64px;
+	width:32px;
+	background:url(http://files.coborns.com/coborns.com/img/customicons/Cob_customicons_both_101515a.png) -64px 0;
+}
+
+#Cob-icon_nuval:hover {
+	background: transparent url(http://files.coborns.com/coborns.com/img/customicons/Cob_customicons_both_101515a.png) -96px 0;
+}
+
+
+
+
+
+#Cob-icon_convenience {
+	left:128px;
+	width:32px;
+	background:url(http://files.coborns.com/coborns.com/img/customicons/Cob_customicons_both_101515a.png) -128px 0;
+}
+
+#Cob-icon_convenience:hover {
+	background: transparent url(http://files.coborns.com/coborns.com/img/customicons/Cob_customicons_both_101515a.png) -160px 0;
+}
+
+
+
+#Cob-icon_bakery {
+	left:192px;
+	width:32px;
+	background:url(http://files.coborns.com/coborns.com/img/customicons/Cob_customicons_both_101515a.png) -192px 0;
+}
+
+#Cob-icon_bakery:hover {
+	background: transparent url(http://files.coborns.com/coborns.com/img/customicons/Cob_customicons_both_101515a.png) -224px 0;
+}
+
+
+#Cob-icon_grocery {
+	left:256px;
+	width:32px;
+	background:url(http://files.coborns.com/coborns.com/img/customicons/Cob_customicons_both_101515a.png) -256px 0;
+}
+
+#Cob-icon_grocery:hover {
+	background: transparent url(http://files.coborns.com/coborns.com/img/customicons/Cob_customicons_both_101515a.png) -288px 0;
+}
+
+#Cob-icon_personalCare {
+	left:0px;
+	width:32px;
+	background:url(http://files.coborns.com/coborns.com/img/customicons/Cob_customicons_both_101515a.png) 0 -32px;
+}
+
+#Cob-icon_personalCare:hover {
+	background: transparent url(http://files.coborns.com/coborns.com/img/customicons/Cob_customicons_both_101515a.png) -32px -32px;
+}
+
+#Cob-icon_produce {
+	left:64px;
+	width:32px;
+	background:url(http://files.coborns.com/coborns.com/img/customicons/Cob_customicons_both_101515a.png) -64px -32px;
+}
+
+#Cob-icon_produce:hover {
+	background: transparent url(http://files.coborns.com/coborns.com/img/customicons/Cob_customicons_both_101515a.png) -96px -32px;
+}
+
+#Cob-icon_meat {
+	left:128px;
+	width:32px;
+	background:url(http://files.coborns.com/coborns.com/img/customicons/Cob_customicons_both_101515a.png) -128px -32px;
+}
+
+#Cob-icon_meat:hover {
+	background: transparent url(http://files.coborns.com/coborns.com/img/customicons/Cob_customicons_both_101515a.png) -160px -32px;
+}
+
+
+#Cob-icon_generalMerchandise {
+	left:128px;
+	width:32px;
+	background:url(http://files.coborns.com/coborns.com/img/customicons/Cob_customicons_both_101515a.png) -192px -32px;
+}
+
+#Cob-icon_generalMerchandise:hover {
+	background: transparent url(http://files.coborns.com/coborns.com/img/customicons/Cob_customicons_both_101515a.png) -224px -32px;
+}
+
+
+#Cob-icon_FourBrothers {
+	left:128px;
+	width:32px;
+	background:url(http://files.coborns.com/coborns.com/img/customicons/Cob_customicons_both_101515a.png) -256px -32px;
+}
+
+#Cob-icon_FourBrothers:hover {
+	background: transparent url(http://files.coborns.com/coborns.com/img/customicons/Cob_customicons_both_101515a.png) -288px -32px;
+}
+
+
+#Cob-icon_tobacco {
+	left:0px;
+	width:32px;
+	background:url(http://files.coborns.com/coborns.com/img/customicons/Cob_customicons_both_101515a.png) 0 -64px;
+}
+
+#Cob-icon_tobacco:hover {
+	background: transparent url(http://files.coborns.com/coborns.com/img/customicons/Cob_customicons_both_101515a.png) -32px -64px;
+}
+
+

@@ -1,0 +1,35 @@
+<div class="store-info-item">
+  <div class="panel-heading">
+    <h4 class="panel-title" itemprop="name">{{(marker || currentMarker).location.StoreName}}</h4>
+  </div>
+  
+  <div class="hidden meta">
+    <div class="store-number">{{(marker || currentMarker).location.StoreNumber}}</div>
+    <div class="store-id">{{(marker || currentMarker).location.StoreId}}</div>
+  </div>
+  <div class="generic-content">
+    <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+     <span itemprop="streetAddress">{{(marker || currentMarker).location.PrimaryAddress}}</span><br />
+     <span itemprop="addressLocality">{{(marker || currentMarker).location.City}}</span>, <span itemprop="addressRegion">{{(marker || currentMarker).location.StateName}}</span> <span itemprop="postalCode">{{(marker || currentMarker).location.PostalCode}}</span><br />
+     <span itemprop="telephone">{{(marker || currentMarker).location.Phone}}</span>
+   </address>
+  </div>
+    <div class="generic-content">
+    <a data-ng-href="https://maps.google.com?saddr=Current+Location&amp;daddr={{(marker || currentMarker).location.Latitude}},{{(marker || currentMarker).location.Longitude}}" target="_blank">Get Directions</a>
+  </div>
+  <div>
+     <a style="background-color: #e6e6e6; color:#000;" href="javascript:void(0)" data-ng-click="selectStore((marker || currentMarker), true)" class="btn btn-default">
+      <i class="fa fa-square-o" data-ng-hide="isCurrentStore((marker || currentMarker))"></i>
+      <i class="fa fa-check-square-o" data-ng-show="isCurrentStore((marker || currentMarker))"></i> My Store
+    </a>
+  </div>
+  <div class="generic-content"><i data-ng-if="searchCompleted">{{(marker || currentMarker).location.zDistance}} miles</i></div>
+  <div style="color:#000;" class="generic-content"><b>Store Hours:</b></div>
+  <div style="font-size: .9em;" class="generic-content" data-ng-bind-html="(marker || currentMarker).location.OpenHoursDisplay" itemprop="openingHours"></div>
+</div>
+<style>
+.store-tooltip div {
+    float: left;
+    margin-right: 10px;
+}
+</style>

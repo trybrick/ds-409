@@ -1,0 +1,68 @@
+
+
+
+<ul class="nav nav-tabs" style="padding-top: 5px">
+
+
+<li data-ng-class="">
+		<a class="btn-default" href="/circular">Weekly Ads</a>
+  </li>
+
+
+	<li data-ng-class="{'active' : couponType !== 'digital' && couponType !== 'store' }" data-ng-if="coupons.printable.items.length > 0">
+		<a class="btn-default" href="javascript:void(0)" data-ng-click="goUrl('/coupons')">Coupons</a>
+  </li>
+  <li data-ng-class="{'active' : couponType == 'digital' }" data-ng-if="coupons.digital.items.length > 0">
+    <a class="btn-default" href="javascript:void(0)" data-ng-click="goUrl('/coupons/digital')">Digital Coupons</a>
+  </li>
+  <li data-ng-class="{'active' : couponType == 'store' }" data-ng-if="coupons.store.length > 0">
+    <a class="btn-default" href="javascript:void(0)" data-ng-click="goUrl('store')">Store Coupons</a>
+  </li>
+  <li data-ng-class="">
+		<a class="btn-default" href="/mylist">My List</a>
+  </li>
+</ul>
+<style>
+  .coupon-container
+  {
+    border: 1px dashed #d3d3d3;
+    border-radius: 5px;
+    height: 210px;
+  }
+
+  .coupon-container:hover
+  {
+    background-color: #f8f8f8;
+  }
+
+  .image-container
+  {
+    float: left;
+    height: 80px;
+    width: 70px;
+    position: relative;
+    margin-top: 5px;
+  }
+
+  .coupon-container img
+  {
+    max-height: 80px;
+    max-width: 60px;
+  }
+  .product-description {
+    margin-left: -10px;
+    padding-bottom: 5px;
+  }
+  .product-description h4
+  {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .product-description p
+  {
+    font-size: 10px;
+    padding: 0 8px;
+    width: 90%;
+  }
+</style>
