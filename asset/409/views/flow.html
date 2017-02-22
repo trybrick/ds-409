@@ -1,0 +1,8 @@
+<div data-ng-repeat="item in partialContents" data-gsn-dynamic="" dynamic="item.Description"></div>
+<div class="hidden-meta" data-ng-if="partialContents[0]" data-gsn-title="{{ ChainName + ' | ' + (getConfig('title').Description || partialContents[0].Headline || contentDetail.name)}}"></div>
+<div class="hidden-meta" data-ng-if="getConfig('description').Description">
+  <div class="hidden-meta" data-gsn-meta-description="getConfig('description').Description"></div>
+</div>
+<div class="hidden-meta" data-ng-if="getConfig('keywords').Description">
+  <div class="hidden-meta" data-gsn-meta-description="getConfig('keywords').Description"></div>
+</div>
