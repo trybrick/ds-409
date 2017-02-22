@@ -50,12 +50,12 @@ function startServer(chainId) {
     res.status(404).send('Not found');
   };
   
-  app.use('/js', express.static(servicePath + '/asset/402/js'));
-  app.use('/assets/css', express.static(servicePath + '/asset/402/assets/css'));
-  app.use('/assets/js', express.static(servicePath + '/asset/402/assets/js'));
-  app.use('/css', express.static(servicePath + '/asset/402/css'));
-  app.use('/img', express.static(servicePath + '/asset/402/img'));
-  app.use('/fonts', express.static(servicePath + '/asset/402/fonts'));
+  app.use('/js', express.static(servicePath + '/asset/409/js'));
+  app.use('/assets/css', express.static(servicePath + '/asset/409/assets/css'));
+  app.use('/assets/js', express.static(servicePath + '/asset/409/assets/js'));
+  app.use('/css', express.static(servicePath + '/asset/409/css'));
+  app.use('/img', express.static(servicePath + '/asset/409/img'));
+  app.use('/fonts', express.static(servicePath + '/asset/409/fonts'));
   
   /**/
   
