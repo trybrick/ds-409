@@ -1,0 +1,501 @@
+/*
+
+ /\_/\
+( o.o )
+ > ^ <
+		Mrrow.
+'Let's style us some morerewards.com!'
+
+
+*/
+
+/* homepage animation */
+
+/* make keyframes that tell the start state and the end state of our object */
+ 
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-webkit-keyframes grow {
+    0% { Opacity: 0; left: -15em; margin: 0 auto;}
+    100% { Opacity: 1; left: 0; margin: 0 auto;}
+}
+@-moz-keyframes grow {
+    0% { Opacity: 0; left: -15em; margin: 0 auto;}
+    100% { Opacity: 1; left: 0; margin: 0 auto;}
+}
+@-ms-keyframes grow {
+    0% { Opacity: 0; left: -15em; margin: 0 auto;}
+    100% { Opacity: 1; left: 0; margin: 0 auto;}
+}
+@-o-keyframes grow {
+    0% { Opacity: 0; left: -15em; margin: 0 auto;}
+    100% { Opacity: 1; left: 0; margin: 0 auto;}
+}
+@-webkit-keyframes turn {
+    0% { transform: rotate(-80deg); -webkit-transform: rotate(90deg);}
+    100% { transform: rotate(0deg); -webkit-transform: rotate(0deg);}
+}
+@-moz-keyframes turn {
+    0% { transform: rotate(-80deg); -webkit-transform: rotate(90deg);}
+    100% { transform: rotate(0deg); -webkit-transform: rotate(0deg);}
+}
+@-ms-keyframes turn {
+    0% { transform: rotate(-80deg); -webkit-transform: rotate(90deg);}
+    100% { transform: rotate(0deg); -webkit-transform: rotate(0deg);}
+}
+@-o-keyframes turn {
+    0% { transform: rotate(-80deg); -webkit-transform: rotate(90deg);}
+    100% { transform: rotate(0deg); -webkit-transform: rotate(0deg);}
+}
+
+.howtonum {
+	opacity:0;  
+	-webkit-animation:turn ease 1;  
+	-moz-animation:turn ease 1;
+	animation:turn ease 1;
+ 
+	-webkit-animation-fill-mode:forwards; 
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+ 
+	-webkit-animation-duration:.9s;
+	-moz-animation-duration:.9s;
+	animation-duration:.9s;
+}
+
+img.grow {
+-webkit-animation: grow 1s ease;
+-moz-animation: grow 1s ease;
+-ms-animation: grow 1s ease;
+-o-animation: grow 1s ease;
+animation: grow 1s ease;
+position: relative;
+}
+
+.fade-in {
+	opacity:0;  
+	-webkit-animation:fadeIn ease-in 1;  
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+ 
+	-webkit-animation-fill-mode:forwards; 
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+ 
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}
+
+.howtonum.one {
+-webkit-animation-delay: .5s;
+-moz-animation-delay: .5s;
+animation-delay: .5s;
+}
+ 
+.howtonum.two {
+-webkit-animation-delay: 1s;
+-moz-animation-delay:1s;
+animation-delay: 1s;
+}
+ 
+.howtonum.three {
+-webkit-animation-delay: 1.5s;
+-moz-animation-delay: 1.5s;
+animation-delay: 1.5s;
+}
+
+
+ 
+.fade-in.one {
+-webkit-animation-delay: .5s;
+-moz-animation-delay: .5s;
+animation-delay: .5s;
+}
+ 
+.fade-in.two {
+-webkit-animation-delay: 1s;
+-moz-animation-delay:1s;
+animation-delay: 1s;
+}
+ 
+.fade-in.three {
+-webkit-animation-delay: 1.5s;
+-moz-animation-delay: 1.5s;
+animation-delay: 1.5s;
+}
+
+.fade-in.four {
+-webkit-animation-delay: 2s;
+-moz-animation-delay: 2s;
+animation-delay: 2s;
+}
+
+/* end animations */
+
+
+html, body {
+	height: 100%;	
+}
+
+body {
+  min-height: 2000px;
+  padding-top:70px;
+  background: #eee;
+  color: #555;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.app {
+	padding: 0 !important;	
+}
+
+a {
+	text-decoration: none;
+	transition: all .5s ease;
+	font-weight: bold;
+	color: #555;	
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a {
+	font-weight: normal;	
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+	color:#ffac2a;	
+}
+
+a:hover {
+	text-decoration: none;
+	color: #FFAC2a;	
+}
+
+.navbar {
+	min-height: 75px;	
+}
+
+.navbar-brand {
+	padding: 6px;
+	margin-right: 10px;	
+}
+
+.navbar-nav > li {
+	margin-left: 15px;	
+}
+
+p.copyright {
+	text-align: center;	
+}
+
+.container {
+	margin-top: .8em;	
+}
+
+span.line {
+	display: inline-block;	
+}
+
+.applogo {
+	opacity: .5;
+	transition: all .5s ease;	
+}
+
+.applogo:hover {
+	opacity: 1;	
+}
+
+section {
+  float:left;
+  width:100%;
+  background:#fff;
+  position:relative;
+}
+
+header {
+  float:left;
+  width:100%;
+  padding:2em 4em;
+  min-height: 460px;
+}
+.content {
+  float:left;
+  width:70%;
+  margin:0 15%;
+  padding:3em 0;
+}
+.videocontainer {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+	box-shadow: 0px 0px 15px rgba(0,0,0,.1);
+	margin-top: 50px;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.row {
+	max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;	
+}
+h1 {
+	text-align:center;
+	color:#444;
+}
+
+
+.counterwrap {
+	width: 100%;
+	text-align:center;
+	font-size: 8em;
+}
+
+.navbar-default .navbar-nav > li > a.btn {
+	border-radius: 1px;
+	background-color: #bfd955;
+	color: #fff;
+	font-size: 1em;
+	transition: all .5s ease;
+	padding: .4em 1.5em;
+	margin-top: .6em;
+}
+
+.navbar-default .navbar-nav > li > a.btn:hover {
+	background-color: #ffac2a;
+	color: #fff;
+}
+
+.btn {
+	border-radius: 1px;
+	background-color: #bfd955;
+	color: #fff;
+	font-size:1.5em;
+	transition: all .5s ease;
+	padding: .8em;
+	cursor: pointer !important;
+}
+
+.btn:hover {
+	background-color: #ffac2a;
+	color: #fff;
+}
+
+.howto {
+	padding: 25px;
+	font-size: 2em;
+	margin-top: 1.5em;
+}
+.howtonum {
+	font-weight: bold;
+	font-size: 3em;
+	position: absolute;
+	margin-top: -.2em;
+	opacity: .5;
+	color: #FFAC2A;	
+}
+
+table {
+	border: 0;	
+}
+td {
+	line-height:1em;
+	padding:0px 5px;
+	height: 3em;
+	min-width: 60px;	
+}
+.buttons {
+	margin-top: 2.5em;
+    position: relative;
+    left: -5px;
+
+}
+
+/*
+
+/)/)
+(^.^)
+(")(")
+I want a cool arrow pointing to content below the fold!
+
+*/
+
+.arrow-wrap {
+  position:absolute;
+  z-index:1;
+  left:50%;
+  top:-5em;
+  margin-left:-5em;
+  background:#111;
+  width:10em;
+  height:10em;
+  padding:4em 2em;
+  border-radius:50%;
+  font-size:0.5em;
+  display:block;
+}
+
+.arrow {
+  float:left;
+  position:relative;
+  width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 3em 3em 0 3em;
+border-color: #ffffff transparent transparent transparent;
+  -webkit-transform:rotate(360deg)
+}
+
+.arrow:after {
+  content:'';
+  position:absolute;
+  top:-3.2em;
+  left:-3em;
+  width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 3em 3em 0 3em;
+border-color: #111 transparent transparent transparent;
+  -webkit-transform:rotate(360deg)
+}
+
+
+.hint {
+  position:absolute;
+  top:0.6em;
+  width:100%;
+  left:0;
+  font-size:2em;
+  font-style:italic;
+  text-align:center;
+  color:#fff;
+  opacity:0;
+}
+
+
+.arrow-wrap:hover .hint {
+  opacity:1;
+}
+
+
+  @-webkit-keyframes arrows {
+    0% { top:0; }
+    10% { top:12%; }
+    20% { top:0; }
+    30% { top:12%; }
+    40% { top:-12%; }
+    50% { top:12%; }
+    60% { top:0; }
+    70% { top:12%; }
+    80% { top:-12%; }
+    90% { top:12%; }
+    100% { top:0; }
+  }
+  
+  .arrow-wrap .arrow {
+    -webkit-animation: arrows 2.8s 0.4s;
+    -webkit-animation-delay: 3s;
+  }
+ 
+
+
+/* Mobile Responsiveness */
+
+@media (max-width:767px) {
+	header {
+		padding: 1em .4em 0;
+		min-height: 0px;
+	}
+	.buttons {
+		margin-top: 0;	
+	}
+	.btn-block {
+		margin-top: 10px;	
+		font-size: 1em;
+	}
+	.howto {
+		font-size: 1.4em;
+		padding: 0;	
+	}
+	.table-responsive {
+		border: 0;	
+	}
+	.navbar-right {
+		margin-left:auto;
+		margin-right:auto;
+		max-width:320px;
+		padding-left: 2.4em;	
+	}
+	.content {
+		padding: 1.5em 0;	
+	}
+	h1 {
+		font-size: 2.1em;	
+	}
+	.counterwrap {
+		font-size: 2.1em;	
+	}
+	.arrow-wrap {
+		font-size: 0.4em;	
+	}
+	.videocontainer {
+		margin-bottom: 50px;	
+	}
+	.footerlogo {
+		margin-top: 15px;	
+	}
+	.footerredeem {
+			font-size: .9em;
+			float:none !important;
+			margin-left: auto;
+			margin-right:auto;
+			position: relative;
+			top: 15px;
+	}
+	.row.copyright {
+		margin-top: 25px;
+		font-size: .8em;	
+	}
+	.footerlogo.img-responsive	{
+		margin-left: auto;
+		margin-right: auto;	
+	}
+}
+
+@media (min-width:768px) and (max-width:1199px) {
+	.counterwrap {
+		font-size: 4em;	
+	}
+	.footerlogo {
+		margin-top: 15px;	
+	}
+	.footerredeem {
+			font-size: .9em;
+			float:none !important;
+			margin-left: auto;
+			margin-right:auto;
+			position: relative;
+			top: 15px;
+			max-width: 460px !important;
+	}
+	.row.copyright {
+		margin-top: 25px;
+		font-size: .8em;	
+	}
+	.footerlogo .img-responsive	{
+		margin-left: auto;
+		margin-right: auto;	
+	}
+	.footerredeem a {
+		position: relative;
+		top: 13px;	
+	}
+	
+}
