@@ -9,6 +9,17 @@ var storeApp = angular
     $locationProvider.html5Mode(true).hashPrefix('!');
     $locationProvider.rewriteLinks = false;
 
+    $routeProvider.when('/', {
+      templateUrl: gsn.getThemeUrl('/views/home.html'),
+      caseInsensitiveMatch: true,
+      storeRequired: false,
+      requireLogin: false
+    });
+
+    $routeProvider.otherwise({
+      templateUrl: gsn.getThemeUrl('/views/flow.html'),
+      caseInsensitiveMatch: true
+    });
   }]);
 
 angular.element(document).ready(function() {
