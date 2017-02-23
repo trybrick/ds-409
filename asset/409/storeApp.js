@@ -18,7 +18,9 @@ var storeApp = angular
 
     $routeProvider.otherwise({
       templateUrl: gsn.getThemeUrl('/views/flow.html'),
-      caseInsensitiveMatch: true
+      caseInsensitiveMatch: true,
+      storeRequired: false,
+      requireLogin: false
     });
   }]);
 
