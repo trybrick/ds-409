@@ -234,10 +234,12 @@ header {
   min-height: 460px;
 }
 .content {
-  float:left;
   width:98%;
   margin:0 1%;
   padding:3em 0;
+  max-width: 1140px;
+  margin-left:auto;
+  margin-right:auto;
 }
 .videocontainer {
     position: relative;
