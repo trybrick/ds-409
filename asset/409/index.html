@@ -65,6 +65,12 @@
   <![endif]-->
 </head>
 <body>
+ <!-- Auto Collapse NavBar -->
+ <script>
+  $('.navbar-collapse a').click(function(){
+  $(".navbar-collapse").collapse('hide');
+  });
+ </script>
 
   <!-- Static navbar -->
   <nav class="navbar navbar-default navbar-fixed-top">
@@ -166,10 +172,6 @@
     ga('send', 'pageview');
   </script>
   <!--end:analytics-->
-  <!-- Auot Collapse NavBar -->
-  <script>$('.navbar-collapse a').click(function(){
-    $(".navbar-collapse").collapse('hide');
-});</script>
-  
+ 
 </body>
 </html>
