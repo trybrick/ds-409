@@ -499,3 +499,8 @@ border-color: #111 transparent transparent transparent;
 	}
 	
 }
+@media (max-width:1000px) {
+	.footerredeem {
+		display:none;	
+	}
+}
