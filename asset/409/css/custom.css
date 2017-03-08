@@ -151,6 +151,21 @@ body {
 .app {
 	padding: 0 !important;	
 }
+.navbar.sub {
+	min-height: 0;	
+}
+
+button.submenu {
+	float: left;
+	border: none;
+	width: 100%;
+	position: absolute;
+	font-weight:bold;
+}
+
+.navbar-toggle.submenu:hover {
+	background-color: none;	
+}
 
 a {
 	text-decoration: none;
