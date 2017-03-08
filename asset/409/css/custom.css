@@ -164,7 +164,7 @@ button.submenu {
 }
 
 .navbar-toggle.submenu:hover {
-	background-color: none;	
+	background-color: transparent;	
 }
 
 a {
