@@ -153,12 +153,17 @@ body {
 	background-color: #FFAC2A;	
 }
 .nav-pills > li > a:focus, .nav-pills > li > a:hover {
-	background-color: #FFAC2A;
-	color: #fff;
+	color: #FFAC2A;
 }
 
 .nav-pills > li > a {
     border-radius: 1px;
+	font-weight:normal;
+}
+
+.navbar-collapse {
+	padding-left: 0;
+	padding-right: 0;	
 }
 
 .app {
