@@ -21,7 +21,6 @@
     $scope.activate = activate;
 
     var defaultZoom = $scope.defaultZoom || 10;
-    var storeGroup = $scope.storeGroup || '';
 
     $scope.fromUrl = $location.search().fromUrl;
     $scope.geoLocationCache = {};
@@ -63,8 +62,8 @@
 
       // filter out storelist
       var storeGroups = gsnApi.groupBy(storeList, 'SortBy');
-      if (storeGroups[storeGroup]) {
-        storeList = storeGroups[storeGroup].items;
+      if (storeGroups[$scope.storeGroup]) {
+        storeList = storeGroups[$scope.storeGroup].items;
       }
 
       if (store) {
