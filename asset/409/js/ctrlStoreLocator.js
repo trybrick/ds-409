@@ -39,6 +39,7 @@
     $scope.pharmacyOnly = false;
     $scope.activated = false;
     $scope.storeByNumber = {};
+    $scope.storeGroup = '';
     $scope.vmsl = {
       myMarkerGrouping: [],
       activated: false
@@ -62,6 +63,7 @@
 
       // filter out storelist
       var storeGroups = gsnApi.groupBy(storeList, 'SortBy');
+      storeGroups = gsnApi.mapObject(storeGroups, 'key');
       if (storeGroups[$scope.storeGroup]) {
         storeList = storeGroups[$scope.storeGroup].items;
       }
