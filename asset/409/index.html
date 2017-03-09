@@ -63,14 +63,6 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-  
-   <!-- Auto Collapse NavBar -->
- <script>
-  $('.navbar-collapse a').click(function(){
-  $(".navbar-collapse").collapse('hide');
-  });
- </script>
- 
 </head>
 <body>
   <!-- Static navbar -->
@@ -139,6 +131,7 @@
   <script src="https://clientapix.gsn2.com/api/v1/store/sitecontentscript/[chainid]?nocache=1"></script>
   <script data-brickid="[chainid]" src="//cdn-staging.gsngrocers.com/script/bricktag/bricktag.min.js?nocache=1"></script>
   <script src="//cdn-staging.gsngrocers.com/script/gsncore/latest/gsncore-basic.min.js?nocache=1"></script>
+  <script src="/asset/409/js/ctrlStoreLocator.js"></script>
   <script src="https://clientapix.gsn2.com/api/v1/content/storeapp/[chainid]/?cdnUrl=/asset/[chainid]/storeApp.js?nocache=1"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular-sanitize.min.js"></script><!-- security -->
@@ -153,6 +146,15 @@
   <script src="/asset/409/js/arrow.js"></script>
   <!-- Counter Script -->
   <script src="/asset/409/js/odometer.min.js"></script>
+
+   <!-- Auto Collapse NavBar -->
+  <script>
+    $(document).ready(function() {
+        $('.navbar-collapse a').click(function(){
+          $(".navbar-collapse").collapse('hide');
+      });
+    });
+  </script>
 
   <!--begin:analytics-->
   <div data-bs-display-mode="bsDisplayMode"></div>
@@ -173,6 +175,6 @@
     ga('send', 'pageview');
   </script>
   <!--end:analytics-->
- 
+
 </body>
 </html>
