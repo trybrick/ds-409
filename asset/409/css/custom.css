@@ -147,6 +147,20 @@ body {
 
 }
 
+/* pills */
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+	background-color: #FFAC2A;	
+}
+.nav-pills > li > a:focus, .nav-pills > li > a:hover {
+	background-color: #FFAC2A;
+	color: #fff;
+}
+
+.nav-pills > li > a {
+    border-radius: 1px;
+}
+
 .app {
 	padding: 0 !important;	
 }

@@ -576,6 +576,7 @@ h3 { font-size: 5em;
 
 .panel-heading {
 	border: none;
+	background-color: #a6cf39;
 }
 
 .panel-default > .panel-heading {
