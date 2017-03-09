@@ -289,6 +289,11 @@ h1 {
 	color: #fff;
 }
 
+.btn-xs {
+	font-size: 1em;
+	padding: .5em 1em;	
+}
+
 .btn {
 	border-radius: 1px;
 	background-color: #bfd955;
