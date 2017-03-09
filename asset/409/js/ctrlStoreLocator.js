@@ -21,7 +21,7 @@
     $scope.activate = activate;
 
     var defaultZoom = $scope.defaultZoom || 10;
-    var storeGroup = $scope.storeGroup || 'Redeem';
+    var storeGroup = $scope.storeGroup || '';
 
     $scope.fromUrl = $location.search().fromUrl;
     $scope.geoLocationCache = {};
