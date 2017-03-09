@@ -154,6 +154,7 @@ body {
 }
 .nav-pills > li > a:focus, .nav-pills > li > a:hover {
 	color: #FFAC2A;
+	background-color: transparent;
 }
 
 .nav-pills > li > a {
