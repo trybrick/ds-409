@@ -311,6 +311,11 @@
       $scope.searchCompleted = false;
       $scope.searchFailed = false;
       var newValue = $scope.search.storeLocator;
+      function errCallback() {
+        if (!isSilent) {
+          $notification.alert('Zip or City, State is required.');
+        }
+      }
 
       if (gsnApi.isNull(newValue, '').length > 1) {
         var point = $scope.geoLocationCache[newValue];
@@ -332,8 +337,23 @@
             }
           });
         }
-      } else if (!isSilent) {
-        $notification.alert('Zip or City, State is required.');
+      } else {
+
+        // Getting User's Location Using HTML 5 Geolocation API
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var point = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+
+            // Changing center of the Map according to user's posotion
+            $scope.setSearchResult(point);
+          }, errCallback, {maximumAge:60000, timeout:5000, enableHighAccuracy:true} );
+          return;
+        }
+
+        errCallback();
       }
     };
 
