@@ -11,6 +11,86 @@
 
 /* homepage animation */
 
+/* LAST MINUTE SLIDER, because whynot */
+
+	#crossfade img {
+    -webkit-animation-name: cf;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 30s;
+    animation-name: cf;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+	position:absolute;
+	display:block;
+	
+
+}
+@-webkit-keyframes cf {
+    0% {opacity: 0;}
+    6% {opacity: 1;}
+    17% {opacity: 1;}
+    23% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes cf {
+    0% {opacity: 0;}
+    6% {opacity: 1;}
+    17% {opacity: 1;}
+    23% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.f1 {
+    -webkit-animation-delay: 0s;
+	animation-delay: 0s;
+}
+.f2 {
+	animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+	opacity: 0;
+		  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+	
+}
+.f3 {
+	animation-delay: 10s;
+    -webkit-animation-delay: 10s;
+		opacity: 0;
+		  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.f4 {
+	animation-delay: 15s;
+    -webkit-animation-delay: 15s;
+		opacity: 0;
+		  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.f5 {
+	animation-delay: 20s;
+    -webkit-animation-delay: 20s;
+		opacity: 0;
+		  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.f6 {
+	animation-delay: 25s;
+    -webkit-animation-delay: 25s;
+		opacity: 0;
+		  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
 /* make keyframes that tell the start state and the end state of our object */
  
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
