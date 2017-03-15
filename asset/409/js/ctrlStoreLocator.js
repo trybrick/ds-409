@@ -342,10 +342,7 @@
         // Getting User's Location Using HTML 5 Geolocation API
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
-            var point = {
-              lat: position.coords.latitude,
-              lng: position.coords.longitude
-            };
+            var point = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
             // Changing center of the Map according to user's posotion
             $scope.setSearchResult(point);
