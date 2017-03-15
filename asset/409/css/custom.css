@@ -330,8 +330,8 @@ section {
 header {
   float:left;
   width:100%;
-  padding:2em 4em;
-  min-height: 460px;
+  padding:0 4em;
+  min-height: 400px;
 }
 .content {
   width:98%;
