@@ -689,3 +689,8 @@ border-color: #111 transparent transparent transparent;
 		margin-top: 0;
 	}
 }
+@media (min-width:768px) {
+	.footerlogo {
+		margin-top: 15px;	
+	}
+}
