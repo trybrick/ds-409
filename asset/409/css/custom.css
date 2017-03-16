@@ -654,7 +654,7 @@ border-color: #111 transparent transparent transparent;
 			max-width: 460px !important;
 	}
 	.row.copyright {
-		margin-top: 25px;
+		padding-top: 25px;
 		font-size: .8em;	
 	}
 	.footerlogo .img-responsive	{
