@@ -232,7 +232,8 @@ body {
 .sidemenu {
 	width: 90%;
 	margin-left:auto;
-	margin-right:auto;	
+	margin-right:auto;
+	float: none;	
 }
 
 /* pills */
