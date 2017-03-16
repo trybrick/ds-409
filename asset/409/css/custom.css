@@ -551,7 +551,7 @@ border-color: #111 transparent transparent transparent;
 	}
 	.howto {
 		font-size: 1.4em;
-		padding: 0;	
+		padding: 0 0 0 15px;	
 	}
 	.table-responsive {
 		border: 0;	
@@ -595,6 +595,23 @@ border-color: #111 transparent transparent transparent;
 	.footerlogo.img-responsive	{
 		margin-left: auto;
 		margin-right: auto;	
+	}
+	h1.countera {
+			font-size: 1.5em;
+			text-align:left;
+			margin-left:10px;
+			color: #999;
+	}
+	h1.counterb {
+			font-size: 1.5em;
+			text-align:right;
+			margin-right: 10px;
+			line-height: 0;
+			color: #999;
+	}
+	p.copyright {
+		top: -20px;
+		font-size: 1em;	
 	}
 }
 
