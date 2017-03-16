@@ -340,7 +340,7 @@ header {
   float:left;
   width:100%;
   padding:0 4em;
-  min-height: 400px;
+  min-height: 410px;
 }
 .content {
   width:98%;
@@ -429,7 +429,7 @@ btn.btn-default.gmodal-close.pull-right {
 .howto {
 	padding: 25px;
 	font-size: 2em;
-	margin-top: 1.5em;
+	margin-top: 2em;
 }
 .howtonum {
 	font-weight: bold;
@@ -692,5 +692,18 @@ border-color: #111 transparent transparent transparent;
 @media (min-width:768px) {
 	.footerlogo {
 		margin-top: 15px;	
+	}
+	h1.countera {
+			
+			text-align:left;
+			margin-left: 2em;
+			color: #999;
+	}
+	h1.counterb {
+			
+			text-align:right;
+			margin-right: 2em;
+			line-height: 0;
+			color: #999;
 	}
 }
