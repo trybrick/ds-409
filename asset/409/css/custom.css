@@ -650,3 +650,8 @@ border-color: #111 transparent transparent transparent;
 		display:none !important;	
 	}
 }
+@media (min-width:1300px) {
+	row.buttons {
+		margin-top: 0;
+	}
+}
