@@ -638,6 +638,12 @@ border-color: #111 transparent transparent transparent;
 }
 
 @media (min-width:768px) and (max-width:1199px) {
+	.rewards-panel {
+		box-shadow:none;	
+	}
+	.content {
+		width: 100%;	
+	}
 	.counterwrap {
 		font-size: 4em;	
 	}
