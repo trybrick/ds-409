@@ -226,6 +226,9 @@ body {
   font-family: 'Open Sans', sans-serif;
 
 }
+	.row.copyright {
+		background-color:#eee;	
+	}
 
 /* pills */
 
@@ -575,10 +578,22 @@ border-color: #111 transparent transparent transparent;
 		font-size: 0.4em;	
 	}
 	.videocontainer {
-		margin-bottom: 50px;	
+		margin-bottom: 0px;	
+		margin-left: auto;
+		margin-right: auto;
+		width: 94%;
+		box-shadow: 0px 0px 8px rgba(0,0,0,.05);
+	}
+	ul.nav li a.btn {
+		max-width: 205px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		right: 5px;	
 	}
 	.footerlogo {
-		margin-top: 15px;	
+		padding-top: 15px;
+		border-top: 1px solid #bbb;	
 	}
 	.footerredeem {
 			font-size: .9em;
@@ -589,8 +604,9 @@ border-color: #111 transparent transparent transparent;
 			top: 15px;
 	}
 	.row.copyright {
-		margin-top: 25px;
-		font-size: .8em;	
+		padding-top: 25px;
+		font-size: .8em;
+		background-color:#eee;	
 	}
 	.footerlogo.img-responsive	{
 		margin-left: auto;
@@ -610,8 +626,9 @@ border-color: #111 transparent transparent transparent;
 			color: #999;
 	}
 	p.copyright {
-		top: -20px;
-		font-size: 1em;	
+		top: -40px;
+		font-size: 1.09em;
+		right: 0px !important;
 	}
 }
 
