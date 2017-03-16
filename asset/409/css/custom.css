@@ -229,6 +229,11 @@ body {
 	.row.copyright {
 		background-color:#eee;	
 	}
+.sidemenu {
+	width: 90%;
+	margin-left:auto;
+	margin-right:auto;	
+}
 
 /* pills */
 
