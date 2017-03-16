@@ -257,10 +257,7 @@
 @media screen and (max-width:970px) {
 	p.copyright {
 		position: relative !important;
-		margin-top: 2em !important;
-		top: 15px;
 		text-align: center;
-		font-size: 0.8em;	
 	}
 }
 
@@ -441,12 +438,6 @@ a:active {
 		
 }
 
-p.copyright {
-	position: absolute;
-	bottom: 0px;
-	right: 16px;
-	margin: 0;	
-}
 
 img.img-responsive {
 	margin-left:auto;

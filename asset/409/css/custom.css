@@ -591,6 +591,12 @@ border-color: #111 transparent transparent transparent;
 		position: relative;
 		right: 5px;	
 	}
+	.rewards-panel {
+		box-shadow:none;	
+	}
+	.content {
+		width: 100%;	
+	}
 	.footerlogo {
 		padding-top: 15px;
 		border-top: 1px solid #bbb;	
@@ -626,7 +632,6 @@ border-color: #111 transparent transparent transparent;
 			color: #999;
 	}
 	p.copyright {
-		top: -40px;
 		font-size: 1.09em;
 		right: 0px !important;
 	}
@@ -637,7 +642,7 @@ border-color: #111 transparent transparent transparent;
 		font-size: 4em;	
 	}
 	.footerlogo {
-		margin-top: 15px;	
+		padding-top: 15px;	
 	}
 	.footerredeem {
 			font-size: .9em;
