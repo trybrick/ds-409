@@ -7,7 +7,12 @@
 'Let's style us some morerewards.com!'
 
 
+
 */
+
+.navbar-header a.active{
+	color: #FFAC2a;	
+}
 
 /* homepage animation */
 
@@ -666,7 +671,6 @@ border-color: #111 transparent transparent transparent;
 			max-width: 460px !important;
 	}
 	.row.copyright {
-		padding-top: 25px;
 		font-size: .8em;	
 	}
 	.footerlogo .img-responsive	{
@@ -705,5 +709,8 @@ border-color: #111 transparent transparent transparent;
 			margin-right: 2em;
 			line-height: 0;
 			color: #999;
+	}
+	.row.copyright {
+			padding-top: 25px;	
 	}
 }
