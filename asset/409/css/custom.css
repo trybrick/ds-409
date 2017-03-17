@@ -10,6 +10,13 @@
 
 */
 
+.wufoo {
+	font-family: 'open sans', arial, helvetica, sans-serif !important;	
+}
+.wufoo .header {
+	min-height: 0 !important;		
+}
+
 a.active{
 	color: #FFAC2a !important;	
 }
