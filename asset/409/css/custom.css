@@ -11,7 +11,7 @@
 */
 
 a.active{
-	color: #FFAC2a;	
+	color: #FFAC2a !important;	
 }
 
 /* homepage animation */
