@@ -10,7 +10,7 @@
 
 */
 
-modal-body button.btn.btn-default.gmodal-close {
+button.gmodal-close {
 		padding: 0!important;
 		font-size: 1em!important;
 		border: none!important;
