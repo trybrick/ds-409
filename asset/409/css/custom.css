@@ -440,7 +440,7 @@ btn.btn-default.gmodal-close.pull-right {
 	font-weight: bold;
 	font-size: 3em;
 	position: absolute;
-	margin-top: -.2em;
+	margin-top: -.75em;
 	opacity: .5;
 	color: #FFAC2A;	
 }
