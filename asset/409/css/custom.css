@@ -13,7 +13,7 @@
 .wufoo {
 	font-family: 'open sans', arial, helvetica, sans-serif !important;	
 }
-.wufoo .header {
+.wufoo header {
 	min-height: 0 !important;		
 }
 
