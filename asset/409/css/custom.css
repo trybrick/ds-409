@@ -11,7 +11,9 @@
 */
 
 .wufoo {
-	font-family: 'open sans', arial, helvetica, sans-serif !important;	
+	font-family: 'open sans', arial, helvetica, sans-serif !important;
+	font-size: 1.1em;
+	line-height: 2em;
 }
 .wufoo header {
 	min-height: 0 !important;		
@@ -19,6 +21,11 @@
 
 a.active{
 	color: #FFAC2a !important;	
+}
+.embed form, .embed body {
+	background-color: #fff !important;
+	padding-right: 15px;
+	padding-top: 0 ;	
 }
 
 /* homepage animation */
