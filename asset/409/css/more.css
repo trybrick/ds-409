@@ -474,17 +474,18 @@ img.rewardicon {
 	color: #fff;
 }
 
+/* let's not make more green
 .more {
 	color: #a6cf39;
 	font-weight:bold;
 }
-
+*/
 
 body.modal-open {
 	overflow: auto;	
 }
 
-h1,h2,h3,h4,h5,h6,p {
+h1,h2,h3,h4,h5,h6, {
  line-height: 1.1;
 }
 h2 { font-size: 3em; }
