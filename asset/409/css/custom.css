@@ -10,6 +10,12 @@
 
 */
 
+modal-body button.btn.btn-default.gmodal-close {
+		padding: 0!important;
+		font-size: 1em!important;
+		border: none!important;
+}
+
 .wufoo {
 	font-family: 'open sans', arial, helvetica, sans-serif !important;
 	font-size: 1.1em;
