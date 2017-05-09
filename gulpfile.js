@@ -54,7 +54,7 @@ function createCopyTask(chain) {
         }
     });
   });
-  
+
   config.tasksCopy.push('copy-ds-' + chain);
 }
 
@@ -101,9 +101,9 @@ gulp.task('build-copy', function(cb){
 });
 
 function createDeployTask(chain) {
-  var destFile = '../cdn-staging.gsngrocers.com/asset/' + chain;
+  var destFile = '../cdn-stg.brickinc.net/asset/' + chain;
   if (config.branch == 'production') {
-    destFile = '../cdn.gsngrocers.com/asset/' + chain;
+    destFile = '../cdn.brickinc.net/asset/' + chain;
   }
   var srcFile = './asset/' + chain;
 
@@ -142,7 +142,7 @@ gulp.task('build-deploy', function(cb){
 
 gulp.task('ds-common-config-for-local-cdn', function(){
   return gulp.src(['./git_components/ds-common/asset/config.json'])
-    .pipe(replace('http://cdn-staging.gsngrocers.com', ''))
+    .pipe(replace('http://cdn-stg.brickinc.net', ''))
     .pipe(gulp.dest('./asset'));
 });
 
