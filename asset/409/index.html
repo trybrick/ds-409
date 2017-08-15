@@ -37,7 +37,11 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" />
 
   <!-- Google Tag Manager and Analytics-->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  <script>
+window.isPrerender = /Prerender/.test( window.navigator.userAgent );
+
+if (!window.isPrerender) {
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
@@ -50,6 +54,7 @@
       m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g;
       m.parentNode.insertBefore(a, m);
     })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+}
   </script>
   <!-- End Google Tag Manager and Analytics-->
 
@@ -158,6 +163,8 @@
   <!--begin:analytics-->
   <div data-bs-display-mode="bsDisplayMode"></div>
   <script>
+
+if (!window.isPrerender) {
     /* allow for additional Google Tag Manager */
     var googleTagId = ((globalConfig || {}).data || {}).GoogleTagId;
     if (googleTagId) {
@@ -167,11 +174,15 @@
          '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
          })(window,document,'script','dataLayer',googleTagId);
     }
+}
   </script>
   <script>
+
+if (!window.isPrerender) {
     /* this assumes ga has been loaded in head element */
     ga('create', 'UA-75463252-1', 'auto');
     ga('send', 'pageview');
+}
   </script>
   <!--end:analytics-->
 
