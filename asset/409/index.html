@@ -65,15 +65,6 @@ if (!window.isPrerender) {
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
   
-  <!-- Navbar Mobile Script -->
-  	<script>
-	$('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
- 		 $('.navbar-toggle:visible').click();
-	});	
-	</script>
-  
-  <!-- End Navbar Mobile Script -->
-  
 </head>
 <body>
   <!-- Static navbar -->
@@ -193,7 +184,7 @@ if (!window.isPrerender) {
    <!-- Auto Collapse NavBar -->
   <script>
     $(document).ready(function() {
-        $('.navbar-collapse a').click(function(){
+        $('.navbar-collapse a:not(.dropdown-toggle)').click(function(){
           $(".navbar-collapse").collapse('hide');
       });
     });
