@@ -481,6 +481,10 @@ img.rewardicon {
 }
 */
 
+.more {
+	text-transform: uppercase;	
+}
+
 body.modal-open {
 	overflow: auto;	
 }
