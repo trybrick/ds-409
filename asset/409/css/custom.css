@@ -235,6 +235,7 @@ animation-delay: 1.5s;
 -webkit-animation-delay: 2s;
 -moz-animation-delay: 2s;
 animation-delay: 2s;
+padding-top: 0;
 }
 
 /* end animations */
@@ -405,7 +406,7 @@ h1 {
 .counterwrap {
 	width: 100%;
 	text-align:center;
-	font-size: 8em;
+	font-size: 3em;
 }
 
 .navbar-default .navbar-nav > li > a.btn {
@@ -452,9 +453,9 @@ btn.btn-default.gmodal-close.pull-right {
 }
 
 .howto {
-	padding: 25px;
-	font-size: 2em;
-	margin-top: 2em;
+	padding: 10px;
+	font-size: 1.5em;
+	margin-top: 1em;
 }
 .howtonum {
 	font-weight: bold;
@@ -584,7 +585,7 @@ border-color: #111 transparent transparent transparent;
 	}
 	.howto {
 		font-size: 1.4em;
-		padding: 0 0 0 15px;	
+		padding: 15px 0 0 15px;	
 	}
 	.table-responsive {
 		border: 0;	
@@ -675,7 +676,7 @@ border-color: #111 transparent transparent transparent;
 		width: 100%;	
 	}
 	.counterwrap {
-		font-size: 4em;	
+		font-size: 3em;	
 	}
 	.footerlogo {
 		padding-top: 15px;	
@@ -717,13 +718,13 @@ border-color: #111 transparent transparent transparent;
 		margin-top: 15px;	
 	}
 	h1.countera {
-			
+			font-size: 1.5em;
 			text-align:left;
 			margin-left: 2em;
 			color: #999;
 	}
 	h1.counterb {
-			
+			font-size: 1.5em;
 			text-align:right;
 			margin-right: 2em;
 			line-height: 0;
