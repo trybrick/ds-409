@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: test_*
 Disallow: test-*
+Disallow: /redeem
