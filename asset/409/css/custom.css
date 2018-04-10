@@ -733,4 +733,7 @@ border-color: #111 transparent transparent transparent;
 	.row.copyright {
 			padding-top: 25px;	
 	}
+	.navbar-right {
+		margin-right: -20px !important;
+	}
 }
