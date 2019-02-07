@@ -2,22 +2,22 @@
   "name": "ds-cdn",
   "description": "digital store repository",
   "version": "1.1.0",
-  "homepage": "https://github.com/gsn/cdn",
+  "homepage": "https://github.com/trybrick/cdn",
   "author": {
-    "name": "Grocery Shopping Network",
-    "email": "tech@groceryshopping.net",
-    "url": "http://www.groceryshopping.net"
+    "name": "Brick, Inc.",
+    "email": "tech@trybrick.com",
+    "url": "https://www.trybrick.com"
   },
   "contributors": [
     {
       "name": "Tom Nguyen",
-      "email": "tnguyen@groceryshopping.net",
-    "url": "http://www.groceryshopping.net"
+      "email": "tnguyen@trybrick.com",
+      "url": "https://www.trybrick.com"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:gsn/cdn.git"
+    "url": "git@github.com:trybrick/cdn.git"
   },
   "keywords": [
     "website"
